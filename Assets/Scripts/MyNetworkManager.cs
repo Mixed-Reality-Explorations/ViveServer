@@ -1,5 +1,4 @@
-﻿using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.Networking;
 
 
@@ -54,9 +53,4 @@ public class TrackingMessage : MessageBase
     public bool grip;
     public bool padClicked;
     public bool padTouched;
-}
-
-public class GestureMessage : MessageBase
-{
-    public int gestureCode;
 }
