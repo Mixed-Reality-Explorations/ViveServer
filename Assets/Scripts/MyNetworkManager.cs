@@ -9,11 +9,10 @@ public class MyNetworkManager : MonoBehaviour
     bool noServer = true;
 
     public const short NotConnected = 1000;
-    public const short Tracking = NotConnected + 1;
-    public const short Calibrating = Tracking + 1;
-    public const short Editing = Calibrating + 1;
-    public const short Connecting = Editing + 1;
-    public const short Gesture = Connecting + 1;
+    public const short Initializing = NotConnected + 1;
+    public const short Calibrating = Initializing + 1;
+    public const short Tracking = Calibrating + 1;
+    public const short Connecting = Tracking + 1;
 
     private short _clientStatus;
 
